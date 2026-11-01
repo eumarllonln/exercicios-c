@@ -6,13 +6,13 @@ int main() {
     int i;
 
     for(i=1; i<=5; i++) {
-        printf("Residencia %d - consumo de água (m3): ", i);
+        printf("Residência %d - consumo de água (m3): ", i);
         scanf("%f", &consumo);
         soma = soma + consumo;
         if (consumo <= 20 ) {
-            printf("Residencia %d: dentro da média\n", i);
+            printf("Residência %d: dentro da média\n", i);
         } else {
-            printf("Residencia %d: acima da média\n", i);
+            printf("Residência %d: acima da média\n", i);
         }
 
     }
