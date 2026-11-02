@@ -1,83 +1,81 @@
-# Atividades em C
+# C Exercises
 
-Uma coleção de pequenos exercícios de programação em C. Cada programa é um único arquivo `.c` que pode ser compilado e executado sozinho.
+A collection of small C programming exercises. Each program is a single `.c` file that can be compiled and run on its own.
 
-## Programas
+## Programs
 
-### `cofrinho.c` — Cofrinho
+### `piggy-bank.c` — Piggy Bank
 
-Um cofrinho com menu. Cada escolha adiciona uma moeda ao total acumulado, e o programa continua perguntando até você escolher `0`.
+A menu-driven piggy bank. Each choice adds a coin to the running total, and the program keeps asking until you choose `0`.
 
-| Opção | Ação                       |
-|-------|----------------------------|
-| `1`   | Adiciona R$0,50            |
-| `2`   | Adiciona R$1,00            |
-| `3`   | Adiciona R$2,00            |
-| `0`   | Para e mostra o total      |
+| Option | Action                     |
+|--------|----------------------------|
+| `1`    | Adds R$0.50                |
+| `2`    | Adds R$1.00                |
+| `3`    | Adds R$2.00                |
+| `0`    | Stops and shows the total  |
 
-Qualquer outra opção exibe a mensagem "Opção inválida" e mostra o menu de novo.
+Any other option prints "Invalid option" and shows the menu again.
 
-**Conceitos:** laço `do...while`, `if / else if`, acumuladores, leitura com `scanf`.
+**Concepts:** `do...while` loop, `if / else if`, accumulators, reading input with `scanf`.
 
-### `consumo-agua.c` — Consumo de Água
+### `water-usage.c` — Water Usage
 
-Pede o consumo de água (em m³) de 5 residências. Para cada uma, informa se o consumo está **dentro da média** (≤ 20 m³) ou **acima da média** (> 20 m³). No final, mostra a média geral das 5 residências.
+Asks for the water usage (in m³) of 5 households. For each one, it says whether usage is **within average** (≤ 20 m³) or **above average** (> 20 m³). At the end, it shows the overall average for the 5 households.
 
-**Conceitos:** laço `for`, condicionais, cálculo de soma e média.
+**Concepts:** `for` loop, conditionals, sum and average calculation.
 
-### `avaliacao-loja.c` — Avaliação da Loja
+### `store-rating.c` — Store Rating
 
-Pede a nota (de 0 a 10) dada por cada um de 10 clientes. Depois, mostra a **média das notas**. Se a média for **menor que 7**, exibe um alerta. Caso contrário, informa que a média é boa (7 ou mais).
+Asks for the rating (0 to 10) given by each of 10 customers. Then it shows the **average rating**. If the average is **below 7**, it prints a warning. Otherwise, it says the average is good (7 or above).
 
-**Conceitos:** laço `for`, variáveis `float`, cálculo de soma e média, `if / else`.
+**Concepts:** `for` loop, `float` variables, sum and average calculation, `if / else`.
 
-### `passos-app.c` — Contador de Passos
+### `step-counter.c` — Step Counter
 
-Simula um app de passos com meta diária de **10.000 passos**. A cada hora, o programa pergunta quantos passos você deu e vai somando até a meta ser atingida. No final, mostra o total de passos e quantas horas levou.
+Simulates a step-tracking app with a daily goal of **10,000 steps**. Every hour, the program asks how many steps you took and keeps adding them up until the goal is reached. At the end, it shows the total number of steps and how many hours it took.
 
-**Conceitos:** laço `while`, contadores, acumuladores, leitura com `scanf`.
+**Concepts:** `while` loop, counters, accumulators, reading input with `scanf`.
 
-## Como compilar e executar
+## How to compile and run
 
-Você precisa de um compilador C, como o [GCC](https://gcc.gnu.org/) (no Windows, dá para usar o [MinGW-w64](https://www.mingw-w64.org/) ou o MSYS2).
+You need a C compiler, such as [GCC](https://gcc.gnu.org/) (on Windows, you can use [MinGW-w64](https://www.mingw-w64.org/) or MSYS2).
 
 ```bash
-# Cofrinho
-gcc cofrinho.c -o cofrinho
-./cofrinho
+# Piggy bank
+gcc piggy-bank.c -o piggy-bank
+./piggy-bank
 
-# Consumo de água
-gcc consumo-agua.c -o consumo-agua
-./consumo-agua
+# Water usage
+gcc water-usage.c -o water-usage
+./water-usage
 
-# Avaliação da loja
-gcc avaliacao-loja.c -o avaliacao-loja
-./avaliacao-loja
+# Store rating
+gcc store-rating.c -o store-rating
+./store-rating
 
-# Contador de passos
-gcc passos-app.c -o passos-app
-./passos-app
+# Step counter
+gcc step-counter.c -o step-counter
+./step-counter
 ```
 
-No Windows, execute os programas como `cofrinho.exe`, `consumo-agua.exe`, `avaliacao-loja.exe` e `passos-app.exe`.
+On Windows, run the programs as `piggy-bank.exe`, `water-usage.exe`, `store-rating.exe` and `step-counter.exe`.
 
-> **Dica:** se os acentos (á, ç, ã) aparecerem estranhos no terminal do Windows, rode `chcp 65001` antes para mudar o console para UTF-8.
-
-## Exemplo
+## Example
 
 ```
---- Cofrinho ---
-1 - Adicionar R$0.50
-2 - Adicionar R$1.00
-3 - Adicionar R$2.00
-0 - Parar
-Escolha uma opção: 2
+--- Piggy Bank ---
+1 - Add R$0.50
+2 - Add R$1.00
+3 - Add R$2.00
+0 - Stop
+Choose an option: 2
 ...
-Escolha uma opção: 0
+Choose an option: 0
 
-Total economizado: R$1.00
+Total saved: R$1.00
 ```
 
-## Autor
+## Author
 
 **Marllon Lorran** — [@eumarllonlr](https://github.com/eumarllonlr)
