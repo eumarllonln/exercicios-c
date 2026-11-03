@@ -80,4 +80,4 @@ Total guardado: R$1.00
 
 ## Autor
 
-**Marllon Lorran** — [LinkedIn](https://www.linkedin.com/in/eumarllonln/) · [GitHub](https://github.com/eumarllonlr)
+**Marllon Lorran** — [LinkedIn](https://www.linkedin.com/in/eumarllonln/) · [GitHub](https://github.com/eumarllonln)
